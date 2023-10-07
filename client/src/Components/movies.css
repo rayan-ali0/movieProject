@@ -1,0 +1,86 @@
+.Cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    border: 1px solid red;
+    gap: 20px;
+    padding: 10px;
+}
+/* .Card{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: center;
+border: 3px solid green;
+height:auto;
+padding: 0;
+
+} */
+.Card{
+    display: grid;
+    grid-template-rows: 60% 10% 10% 10% 10%;
+    /* flex-direction: column; */
+    /* justify-content: flex-stacrt; */
+    grid-template-columns: 90%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(192, 187, 187);
+    border-radius: 10%;
+    height: 400px;;
+    padding: 1%;
+    
+    }
+.Card img{
+    border-radius: 10%;
+  transform: scale(0.6);
+  
+
+
+}
+.Card h3{
+    font-size: 23px;
+
+}
+.Card h5{
+    font-size: 18px;
+    
+
+}
+.cardChild{
+/* border: 1px solid red; */
+/* display: block; */
+width: 100%;
+text-align: center;
+margin-top: 3px;
+border: 1px solid yellow;
+
+}
+.buttons{
+    display:  flex;
+    flex-direction: row;
+    justify-content: center;
+    /* width: 90%; */
+
+}
+.button{
+    text-decoration: dashed;
+    font-size: 16px;    
+    border-radius: 15%;
+    padding: 3%;
+    width: 20%;
+   color: black;
+}
+.editButton{
+    background-color: #c5c8cc;
+
+}
+.deleteButton{
+    background-color: #c00909;
+
+}
+.cardDetail{
+    font-weight: bold;
+    text-decoration: none;
+    /* padding: 1%; */
+    padding: 1% 0;
+
+}
