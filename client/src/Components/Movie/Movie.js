@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react"
 import '../Movie/movie.css'
 import img from '../../images/movie.png'
+import EditMovie  from "../Edit/EditMovie"
 function Movie({ movieId }) {
     const [movieData, setMovie] = useState({})
     const [updated, setUpdated] = useState(false)
     const [stars, setStars] = useState([])
     const [movieRate, setMovieRate] = useState()
+    const [hidden,setHidden]=useState(true)
 
     const getMovie = async () => {
         return await
@@ -30,7 +32,6 @@ function Movie({ movieId }) {
 
     const rateBoard = () => {
         setMovieRate(movieData.rating)
-        console.log(movieRate)
         let stars = [];
         const rate = Math.round(movieRate);
         for (let i = 1; i <= 10; i++) {
@@ -44,6 +45,9 @@ function Movie({ movieId }) {
         setStars(stars)
     }
 
+    const showForm=()=>{
+        setHidden(false)
+    }
     useEffect(() => {
         getMovie()
     },[])
@@ -53,6 +57,7 @@ function Movie({ movieId }) {
     },[movieData])
 
     return (
+        <> 
         <figure className="Card" >
             <article className="ImageRate">
                 <img src={img} alt="movieImg" />
@@ -63,10 +68,13 @@ function Movie({ movieId }) {
                 <h5 className="card-year cardChild">Movie Realease : {movieData.year} </h5>
                 <p className="cardChild"> Movie Description : {movieData.description}  </p>
                 <figcaption className="buttons cardChild">
-                    <a href="www.google.com" className="editButton button">Edit</a>
+                    <button  className="editButton" onClick={()=>(setHidden(false))}>Edit</button>
                 </figcaption>
             </article>
         </figure>
+        {!hidden? <EditMovie movie={movieData}/> :null }
+       
+        </>
     )
 
 }

@@ -64,8 +64,14 @@
 }
 
 .editButton {
-    background-color: #c5c8cc;
-height: 10px;
-width: 30px;
+ /* background-color: #c5c8cc; */
+ display: inline;
+height: 50px;
+width: 100px;
 text-align: center;
+justify-content: center;
+font-size: larger;
+border-radius: 9%;
+cursor: pointer;
+
 }
