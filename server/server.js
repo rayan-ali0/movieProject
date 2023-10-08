@@ -111,5 +111,5 @@ app.post("/movies/add", movieController.add);
 
 app.delete('/movies/delete/:ID', movieController.deleteById)
 
-app.put("/movies/edit/:ID",isAuthenticated, movieController.editById)
+app.put("/movies/edit/:ID", movieController.editById)
 

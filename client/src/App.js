@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Movies from './Components/Movies';
+import Movie from './Components/Movie'
 
 function App() {
   const [movies,setMovies]=useState([])
@@ -25,7 +26,8 @@ getMovies()
     <div className="App">
        
 
-  <Movies moviesData={movies} update={changeUpdate}/>
+  {/* <Movies moviesData={movies} update={changeUpdate}/> */}
+  <Movie moviesData={movies}/>
     </div>
   );
 }

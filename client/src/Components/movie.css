@@ -1,0 +1,67 @@
+.Card {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(192, 187, 187);
+    border-radius: 10%;
+    height: 50vh;
+    grid-template-rows: 1fr;
+}
+
+.Card article {
+    height: 90%;
+    margin: 1%;
+    border: 1px solid pink;
+}
+
+.Details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.ImageRate {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.ImageRate span {
+    border: 1px solid yellow;
+    font-size: 15px;
+}
+
+.Card img {
+    border-radius: 10%;
+    height: 100%;
+}
+
+.Card h3 {
+    font-size: 23px;
+}
+
+.Card h5 {
+    font-size: 18px;
+}
+
+.cardChild {
+    width: 100%;
+    margin-top: 3px;
+    border: 1px solid red;
+    text-align: left;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.editButton {
+    background-color: #c5c8cc;
+
+}

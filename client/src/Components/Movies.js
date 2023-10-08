@@ -35,8 +35,6 @@ function Movies({moviesData,update}) {
            
 
            
-        
-
 
         </section>
     )

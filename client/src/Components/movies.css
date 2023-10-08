@@ -5,16 +5,7 @@
     gap: 20px;
     padding: 10px;
 }
-/* .Card{
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-align-items: center;
-border: 3px solid green;
-height:auto;
-padding: 0;
 
-} */
 .Card{
     display: grid;
     grid-template-rows: 60% 10% 10% 10% 10%;
@@ -51,7 +42,6 @@ padding: 0;
 width: 100%;
 text-align: center;
 margin-top: 3px;
-border: 1px solid yellow;
 
 }
 .buttons{
