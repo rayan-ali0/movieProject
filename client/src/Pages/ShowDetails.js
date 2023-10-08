@@ -6,11 +6,10 @@ import { useParams } from "react-router-dom";
 function ShowDetails() {
     const params = useParams()
     let Id = params.Id;
-  
     return (
         <>
-        <Movie movieId={Id} />
-    </>
+            <Movie movieId={Id} />
+        </>
     )
 }
 

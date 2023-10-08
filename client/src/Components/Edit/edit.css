@@ -8,6 +8,12 @@ fieldset{
 
 }
 
-input , textarea {
+input  {
     width: 20%;
+    height: 20px;
+}
+textarea{
+    width: 20%;
+
+    height: 120px
 }

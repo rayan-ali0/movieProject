@@ -4,7 +4,6 @@ import img from '../../images/movie.png'
 import EditMovie  from "../Edit/EditMovie"
 function Movie({ movieId }) {
     const [movieData, setMovie] = useState({})
-    const [updated, setUpdated] = useState(false)
     const [stars, setStars] = useState([])
     const [movieRate, setMovieRate] = useState()
     const [hidden,setHidden]=useState(true)
@@ -20,15 +19,6 @@ function Movie({ movieId }) {
                     console.log(error))
     }
 
-    //     const editMovie = async (id) => {
-    //         try {
-    //             await fetch(`/movies/edit/${id}`, { method: `PUT` });
-    // setUpdated(!updated)  
-    //       }
-    //         catch (error) {
-    //             console.log(error)
-    //         }
-    //     }
 
     const rateBoard = () => {
         setMovieRate(movieData.rating)

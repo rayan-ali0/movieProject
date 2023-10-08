@@ -2,7 +2,7 @@
 import './App.css';
 // import Movies from './Components/Movies';
 // import Movie from './Components/Movie'
-import { Routes , Route} from "react-router-dom"
+import {BrowserRouter, Routes , Route} from "react-router-dom"
 import ShowMovies from './Pages/ShowMovies'
 import ShowDetails from './Pages/ShowDetails'
 
@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div className="App">
-       
+       <BrowserRouter>
 <Routes>
   <Route path="/" element={<ShowMovies/>}></Route>
   <Route path="/ShowDetails/:Id" element={<ShowDetails/>}></Route>
 
 </Routes>
-
+</BrowserRouter>
     </div>
   );
 }
