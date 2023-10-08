@@ -74,9 +74,9 @@ const movieController = {
     },
     editById: async (req, res) => {
         let { ID } = req.params;
-        let { title, year, rating } = req.query;
+        let { title, year, rating ,description} = req.query;
         try {
-            const editedMovie = await movieModel.findByIdAndUpdate(ID, { title, year, rating }, { new: true });
+            const editedMovie = await movieModel.findByIdAndUpdate(ID, {title, year, rating ,description}, { new: true });
             if (!editedMovie) {
                 res.status(404).json({ status: 404, error: "Movie not found" })
             }

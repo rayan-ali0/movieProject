@@ -1,12 +1,11 @@
 .Cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    border: 1px solid red;
     gap: 20px;
     padding: 10px;
 }
 
-.Card{
+.Cardd{
     display: grid;
     grid-template-rows: 60% 10% 10% 10% 10%;
     /* flex-direction: column; */
@@ -20,25 +19,23 @@
     padding: 1%;
     
     }
-.Card img{
+.cardImg{
     border-radius: 10%;
-  transform: scale(0.6);
+  transform: scale(0.7);
   
 
 
 }
-.Card h3{
+.Cardd h3{
     font-size: 23px;
 
 }
-.Card h5{
+.Cardd h5{
     font-size: 18px;
     
 
 }
-.cardChild{
-/* border: 1px solid red; */
-/* display: block; */
+.child{
 width: 100%;
 text-align: center;
 margin-top: 3px;
@@ -67,7 +64,7 @@ margin-top: 3px;
     background-color: #c00909;
 
 }
-.cardDetail{
+.cardDetails{
     font-weight: bold;
     text-decoration: none;
     /* padding: 1%; */

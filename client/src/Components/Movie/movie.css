@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     border: 1px solid rgb(192, 187, 187);
-    border-radius: 10%;
+    border-radius: 5%;
     height: 50vh;
     grid-template-rows: 1fr;
 }
@@ -12,7 +12,6 @@
 .Card article {
     height: 90%;
     margin: 1%;
-    border: 1px solid pink;
 }
 
 .Details {
@@ -26,18 +25,22 @@
     display: grid;
     grid-template-rows: 80% 20%;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
 }
 
 
 .ImageRate span {
-    border: 1px solid yellow;
-    font-size: 15px;
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
 }
 
 .Card img {
     border-radius: 10%;
     height: 100%;
+    width: 100%;
 }
 
 .Card h3 {
@@ -51,7 +54,6 @@
 .cardChild {
     width: 100%;
     margin-top: 3px;
-    border: 1px solid red;
     text-align: left;
 }
 
@@ -63,5 +65,7 @@
 
 .editButton {
     background-color: #c5c8cc;
-
+height: 10px;
+width: 30px;
+text-align: center;
 }
